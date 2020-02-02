@@ -1,40 +1,22 @@
+package main
+
 import (
-    "flag"
-    "github.com/gorilla/mux"
-    "io"
-    "log"
-    "net"
-    "net/http"
-    "net/http/fcgi"
-    "runtime"
+  "fmt"
+  "net/http"
 )
 
-var local = flag.String("local", "", "serve as webserver, example: 0.0.0.0:8000")
+srcDir := "./src"
+ingoreDir := "/ignore"
 
-func init() {
-    runtime.GOMAXPROCS(runtime.NumCPU())
-}
-
-func homeView(w http.ResponseWriter, r *http.Request) {
-    headers := w.Header()
-    headers.Add("Content-Type", "text/html")
-    io.WriteString(w, "<html><head></head><body><p>It works!</p></body></html>")
+func ignore(w http.ResponseWriter, r *http.Request) {
+  w.Write([]byte(""))
 }
 
 func main() {
-    r := mux.NewRouter()
-
-    r.HandleFunc("/", homeView)
-
-    flag.Parse()
-    var err error
-
-    if *local != "" { // Run as a local web server
-        err = http.ListenAndServe(*local, r)
-    } else { // Run as FCGI via standard I/O
-        err = fcgi.Serve(nil, r)
-    }
-    if err != nil {
-        log.Fatal(err)
-    }
+  http.Handle("/", http.FileServer(http.Dir(srcDir)))
+  http.HandleFunc(ignoreDir, ignore)
+  fmt.Println("Server is up and running, serving " + srcDir + ", ignoring " + ignoreDir + ".")
+  if err := http.ListenAndServe(":8080", nil); err != nil {
+    panic(err)
+  }
 }
