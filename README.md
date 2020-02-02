@@ -25,6 +25,11 @@ That's Bobbbay with THREE b's
 
 ## Start
 To start, just run 
+
+```
+cd GoServe
+```
+Then
 ```
 make
 ```
