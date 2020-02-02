@@ -26,7 +26,10 @@ func main() {
   steps := []string{"Port", "Source (starting from ..)", "Ignore Dir (starting from ..)"}
 
   for i:=0; i<len(steps);i++{
-    fmt.Print(steps[i] + " >---> ")
+	fmt.Print(steps[i] + " $ ")
+	if i == 1 {
+		fmt.Print("../")
+	}
     text, _ := reader.ReadString('\n')
     // convert CRLF to LF
 	text = strings.Replace(text, "\n", "", -1)
