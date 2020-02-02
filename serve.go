@@ -11,7 +11,7 @@ func ignore(w http.ResponseWriter, r *http.Request) {
 
 func main() {
   srcDir := "./src"
-  ingoreDir := "/ignore"
+  ignoreDir := "/ignore"
   
   http.Handle("/", http.FileServer(http.Dir(srcDir)))
   http.HandleFunc(ignoreDir, ignore)
