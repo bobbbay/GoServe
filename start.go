@@ -8,7 +8,7 @@ import (
   "strconv"
 )
 
-func main(){
+func main() {
 
   reader := bufio.NewReader(os.Stdin)
   fmt.Println(`
