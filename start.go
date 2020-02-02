@@ -16,7 +16,7 @@ GoServe
 `)
   fmt.Println("---------------------")
 
-  steps := []string{"Port", "Source"}
+  steps := []string{"Port", "Source (starting from ..)", "Ignore Dir (starting from ..)"}
 
   for i:=0; i<len(steps);i++{
     fmt.Print(steps[i] + " >---> ")
@@ -38,23 +38,24 @@ GoServe
         return
     }
 	
-	write, err := settings.WriteString(text)
-	
+	write, err := settings.WriteString(text + ";")
+	fmt.Println(write)
+
 	if err != nil {
         fmt.Println(err)
         settings.Close()
         return
-    }
-	
-	fmt.Println(write, "Settings saved")
-	
+	}
+		
 	err = settings.Close()
 	
 	if err != nil {
         fmt.Println(err)
         return
-    }
+	}
 
   }
+
+  fmt.Println("All done, run go run serve.go OR make serve to begin serving!")
 
 }
