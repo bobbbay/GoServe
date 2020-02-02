@@ -5,14 +5,14 @@ import (
   "net/http"
 )
 
-srcDir := "./src"
-ingoreDir := "/ignore"
-
 func ignore(w http.ResponseWriter, r *http.Request) {
   w.Write([]byte(""))
 }
 
 func main() {
+  srcDir := "./src"
+  ingoreDir := "/ignore"
+  
   http.Handle("/", http.FileServer(http.Dir(srcDir)))
   http.HandleFunc(ignoreDir, ignore)
   fmt.Println("Server is up and running, serving " + srcDir + ", ignoring " + ignoreDir + ".")
