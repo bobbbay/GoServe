@@ -9,8 +9,14 @@ GoServe is a quick, 1-dep (Golang) serving utility, making anyone serve locally 
 Absolutely NO knowledge of Go is needed to use. Just run make start and will do the rest!
 
 ## Install
+### Dependencies
 Actually, I lied. You need git to install. Sorry :smirk::grin:
+```
+sudo apt-get install git
+```
+And here's Go's [installation docs](https://golang.org/doc/install).
 
+### Get the code
 Just run 
 ```
 git clone https://github.com/Bobbbay/GoServe.git
