@@ -6,15 +6,22 @@ import (
   "os"
   "strings"
   "strconv"
+  "io/ioutil"
 )
+
+func banner() {
+    b, err := ioutil.ReadFile("goservelogo.txt")
+    if err != nil {
+        panic(err)
+    }
+	fmt.Println(string(b))
+	fmt.Println("-----------------------------------------------------------------------------------------------------------------")
+}
 
 func main() {
 
   reader := bufio.NewReader(os.Stdin)
-  fmt.Println(`
-GoServe                                            
-`)
-  fmt.Println("---------------------")
+  banner()
 
   steps := []string{"Port", "Source (starting from ..)", "Ignore Dir (starting from ..)"}
 

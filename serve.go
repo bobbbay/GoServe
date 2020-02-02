@@ -11,7 +11,18 @@ func ignore(w http.ResponseWriter, r *http.Request) {
   w.Write([]byte(""))
 }
 
+func banner() {
+    b, err := ioutil.ReadFile("goservelogo.txt")
+    if err != nil {
+        panic(err)
+    }
+	fmt.Println(string(b))
+	fmt.Println("-----------------------------------------------------------------------------------------------------------------")
+}
+
 func main() {
+  banner()
+
   data, err := ioutil.ReadFile("goserve.conf")
   parsed := strings.Split(string(data), ";")
 
