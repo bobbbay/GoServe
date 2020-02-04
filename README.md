@@ -6,9 +6,6 @@ Quickly serve static sites in Go
 [![Build Status](https://app.bitrise.io/app/b0999db5cd64218a/status.svg?token=3krVYrcb8WhnTUEsSOAB8Q)](https://app.bitrise.io/app/b0999db5cd64218a)
 ![Go Lint](https://github.com/Bobbbay/GoServe/workflows/Go%20Lint/badge.svg)
 
-## GoServe is still in Beta, v0.1
-Don't hesitate to open issues and PRs!
-
 ## What is this?
 GoServe is a quick, 1-dep (Golang) serving utility, making anyone serve locally easily and quickly, especially since you have the speed of Go on your side!
 Absolutely NO knowledge of Go is needed to use. Just run make start and will do the rest!
@@ -46,3 +43,6 @@ Just run
 ```
 make update
 ```
+
+## GoServe is still in Beta, v0.1
+Don't hesitate to open issues and PRs!
