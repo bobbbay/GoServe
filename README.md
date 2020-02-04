@@ -3,6 +3,7 @@ Quickly serve static sites in Go
 
 [![Bobbbay](https://circleci.com/gh/Bobbbay/GoServe.svg?style=svg)](https://app.circleci.com/github/Bobbbay/GoServe/pipelines)
 [![Build Status](https://travis-ci.org/Bobbbay/GoServe.svg?branch=master)](https://travis-ci.org/Bobbbay/GoServe)
+[![Build Status](https://app.bitrise.io/app/b0999db5cd64218a/status.svg?token=3krVYrcb8WhnTUEsSOAB8Q)](https://app.bitrise.io/app/b0999db5cd64218a)
 
 ## GoServe is still in Beta, v0.1
 Don't hesitate to open issues and PRs!
