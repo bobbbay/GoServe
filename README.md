@@ -44,5 +44,5 @@ Just run
 make update
 ```
 
-## GoServe is still in Beta, v0.1
+## GoServe is still in Beta!
 Don't hesitate to open issues and PRs!
