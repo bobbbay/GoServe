@@ -1,4 +1,4 @@
-name: Go-lint
+name: Go Lint
 on: [push]
 jobs:
 
