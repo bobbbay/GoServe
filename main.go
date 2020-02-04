@@ -24,8 +24,8 @@ func banner() {
 }
 
 func clean(){
-	os.Remove("goserve.conf")
-	os.Create("goserve.conf")
+	os.Remove("conifg/goserve.conf")
+	os.Create("config/goserve.conf")
 	fmt.Println("GoServe cleaned, run make to start again")
 }
 
@@ -52,7 +52,7 @@ func setup() {
 	}
 
 	// At this point, we consider all is good
-	settings, err := os.OpenFile("goserve.conf", os.O_APPEND|os.O_WRONLY, 0644)
+	settings, err := os.OpenFile("config/goserve.conf", os.O_APPEND|os.O_WRONLY, 0644)
 	
 	if err != nil {
         fmt.Println(err)
@@ -85,7 +85,7 @@ func setup() {
 func serve() {
   banner()
 
-  data, err := ioutil.ReadFile("goserve.conf")
+  data, err := ioutil.ReadFile("config/goserve.conf")
   parsed := strings.Split(string(data), ";")
 
   if err != nil {
@@ -108,9 +108,9 @@ func serve() {
 }
 
 func main(){
-  confLen, _ := os.Stat("goserve.conf")
+  confLen, _ := os.Stat("config/goserve.conf")
   conf := confLen.Size()
-  nilFile, _ := os.Stat("nilFile.goserve")
+  nilFile, _ := os.Stat("config/nilFile.goserve")
   nilLen := nilFile.Size()
 
   if conf == nilLen {
