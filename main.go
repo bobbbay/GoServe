@@ -15,7 +15,7 @@ func ignore(w http.ResponseWriter, r *http.Request) {
 }
 
 func banner() {
-    b, err := ioutil.ReadFile("goservelogo.txt")
+    b, err := ioutil.ReadFile("assets/goservelogo.txt")
     if err != nil {
         panic(err)
     }
