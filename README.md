@@ -8,7 +8,7 @@ Quickly serve static sites in Go
 
 ## What is this?
 GoServe is a quick, 1-dep (Golang) serving utility, making anyone serve locally easily and quickly, especially since you have the speed of Go on your side!
-Absolutely NO knowledge of Go is needed to use. Just run make start and will do the rest!
+Absolutely NO knowledge of Go is needed to use. Just run `make` and will do the rest!
 
 ## Install
 ### Dependencies
