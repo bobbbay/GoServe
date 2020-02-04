@@ -1,4 +1,4 @@
 language: go
 go: 
   "1.12"
-script: go test -v ./ && make
+script: go test -v ./ 
