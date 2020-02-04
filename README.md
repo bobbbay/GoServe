@@ -39,10 +39,10 @@ Then
 make
 ```
 
-Enter your creds for your server (only asks for port, source directory for your files and ignore directory).
-
-Then, run 
-```
-make serve
-```
 And your server will start! Happy serving!
+
+## Update
+Just run 
+```
+make update
+```
