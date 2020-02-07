@@ -34,21 +34,21 @@ func setup() {
   reader := bufio.NewReader(os.Stdin)
   banner()
 
-  steps := []string{"Port", "Source (starting from ..)", "Ignore Dir (starting from ..)"}
+  steps := []string{"Port", "Source (starting from /)", "Ignore Dir (starting from /)"}
 
   for i:=0; i<len(steps);i++{
 	fmt.Print(steps[i] + " $ ")
-	if i == 1 {
-		fmt.Print("../")
+	if i != 0 {
+		fmt.Print("/")
 	}
     text, _ := reader.ReadString('\n')
     // convert CRLF to LF
 	text = strings.Replace(text, "\n", "", -1)
 
 	num, err := strconv.Atoi(text)
-	if err == nil && num <= 1024 {
+	if err == nil && num <= 1024 && i == 0 {
 		fmt.Println("We don't support low ports yet")
-		steps = append([]string{"Prepend Item"}, steps...)
+		os.Exit(1)
 	}
 
 	// At this point, we consider all is good
@@ -96,8 +96,8 @@ func serve() {
   fmt.Println(parsed)
 
   port := parsed[0]
-  srcDir := ".." + parsed[1]
-  ignoreDir := ".." + parsed[2]
+  srcDir := "/" + parsed[1]
+  ignoreDir := "/" + parsed[2]
 
   http.Handle("/", http.FileServer(http.Dir(srcDir)))
   http.HandleFunc(ignoreDir, ignore)
