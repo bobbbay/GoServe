@@ -25,6 +25,16 @@ curl https://raw.githubusercontent.com/Bobbbay/GoServe/master/install.sh | bash
 
 Currently only supports `x86_64`.
 
+### Run *without* Golang
+Just
+```
+cd GoServe
+```
+And
+```
+sudo ./GoServe
+```
+
 ### I *do* have Golang installed
 Just run 
 ```
@@ -32,9 +42,8 @@ git clone https://github.com/Bobbbay/GoServe.git
 ```
 That's Bobbbay with THREE b's
 
-## Start
+### Run *with* Golang
 To start, just run 
-
 ```
 cd GoServe
 ```
@@ -43,8 +52,6 @@ Then
 make
 ```
 
-And your server will start! Happy serving!
-
 ## Update
 Just run 
 ```
@@ -52,4 +59,4 @@ make update
 ```
 
 ## GoServe is still in Beta!
-Don't hesitate to open issues and PRs!
+Don't hesitate to open issues and PRs (please)!
