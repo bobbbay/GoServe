@@ -19,7 +19,12 @@ sudo apt-get install git
 
 ### Get the code
 #### I *don't* have Golang installed
-We're working on this right now!
+Run the installer, it'll do everything for you!
+```
+curl https://raw.githubusercontent.com/Bobbbay/GoServe/master/install.sh | bash
+```
+
+Currently only support `x86_64`
 
 
 #### I *do* have Golang installed
