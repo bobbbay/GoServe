@@ -16,13 +16,13 @@ Actually, I lied. You need git to install. Sorry :smirk::grin:
 ```
 sudo apt-get install git
 ```
-And here's Go's [installation docs](https://golang.org/doc/install).
-
-Dependency summary:
-- Golang
-- Git
 
 ### Get the code
+#### I *don't* have Golang installed
+We're working on this right now!
+
+
+#### I *do* have Golang installed
 Just run 
 ```
 git clone https://github.com/Bobbbay/GoServe.git
