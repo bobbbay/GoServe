@@ -13,21 +13,19 @@ Absolutely NO knowledge of Go is needed to use. Just run `make` and it will do t
 ## Install
 ### Dependencies
 Actually, I lied. You need git to install. Sorry :smirk::grin:
-```
-sudo apt-get install git
-```
+If you don't have Golang, you will need `curl` and `sudo` permission. 
 
-### Get the code
-#### I *don't* have Golang installed
+### I *don't* have Golang installed (sudo permission needed)
+You will also need `curl`, as has been staded a trillion times.
 Run the installer, it'll do everything for you!
+ > Make sure you have `curl`!
 ```
 curl https://raw.githubusercontent.com/Bobbbay/GoServe/master/install.sh | bash
 ```
 
-Currently only support `x86_64`
+Currently only supports `x86_64`.
 
-
-#### I *do* have Golang installed
+### I *do* have Golang installed
 Just run 
 ```
 git clone https://github.com/Bobbbay/GoServe.git
