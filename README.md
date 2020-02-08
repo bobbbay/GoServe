@@ -18,6 +18,10 @@ sudo apt-get install git
 ```
 And here's Go's [installation docs](https://golang.org/doc/install).
 
+Dependency summary:
+- Golang
+- Git
+
 ### Get the code
 Just run 
 ```
