@@ -10,10 +10,6 @@ import (
   "strconv"
 )
 
-func ignore(w http.ResponseWriter, r *http.Request) {
-  w.Write([]byte(""))
-}
-
 func banner() {
     b, err := ioutil.ReadFile("assets/goservelogo.txt")
     if err != nil {
@@ -34,7 +30,7 @@ func setup() {
   reader := bufio.NewReader(os.Stdin)
   banner()
 
-  steps := []string{"Port", "Source (starting from /)", "Ignore Dir (starting from /)"}
+  steps := []string{"Port", "Source (starting from /)"}
 
   for i:=0; i<len(steps);i++{
 	fmt.Print(steps[i] + " $ ")
@@ -97,11 +93,9 @@ func serve() {
 
   port := parsed[0]
   srcDir := "/" + parsed[1]
-  ignoreDir := "/" + parsed[2]
 
   http.Handle("/", http.FileServer(http.Dir(srcDir)))
-  http.HandleFunc(ignoreDir, ignore)
-  fmt.Println("Server is up and running, serving " + srcDir + ", ignoring " + ignoreDir + ".")
+  fmt.Println("Server is up and running, serving " + srcDir + ".")
   if err := http.ListenAndServe(":" + port, nil); err != nil {
     panic(err)
   }
