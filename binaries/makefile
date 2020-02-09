@@ -1,4 +1,4 @@
 run:
-	go run main.go
+	./GoServe
 update:
-	git pull origin master
+	cd .. && rm -rf GoServe && curl https://raw.githubusercontent.com/Bobbbay/GoServe/master/install.sh | bash && cd GoServe
