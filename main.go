@@ -20,7 +20,7 @@ func banner() {
 }
 
 func clean(){
-	os.Remove("conifg/goserve.conf")
+	os.Remove("config/goserve.conf")
 	os.Create("config/goserve.conf")
 	fmt.Println("GoServe cleaned, run make to start again")
 }
