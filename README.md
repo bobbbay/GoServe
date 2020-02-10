@@ -37,5 +37,5 @@ Just run
 make update
 ```
 
-## GoServe is still in Beta!
+## HELP!!!
 Don't hesitate to open issues and PRs (please)!
