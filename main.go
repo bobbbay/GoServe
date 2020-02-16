@@ -82,8 +82,11 @@ func serve() {
   banner()
 
   data, err := ioutil.ReadFile("config/goserve.conf")
+  if err != nil {
+	  fmt.Println(err)
+	  return
+  }
   parsed := strings.Split(string(data), ";")
-
   if err != nil {
     fmt.Println("File reading error", err)
     return
