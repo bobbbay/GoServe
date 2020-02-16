@@ -33,17 +33,6 @@ git clone https://github.com/Bobbbay/GoServe.git
 That's Bobbbay with THREE b's
 
 ## Start
-### *Without* Golang
-Just enter the project
-```
-cd GoServe
-```
-And then 
-```
-./GoServe
-```
-
-### *With* Golang
 To begin, just run 
 ```
 cd GoServe
