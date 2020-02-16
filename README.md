@@ -33,6 +33,17 @@ git clone https://github.com/Bobbbay/GoServe.git
 That's Bobbbay with THREE b's
 
 ## Start
+### *Without* Golang
+Just enter the project
+```
+cd GoServe
+```
+And then 
+```
+./GoServe
+```
+
+### *With* Golang
 To begin, just run 
 ```
 cd GoServe
@@ -50,3 +61,4 @@ make update
 
 ## HELP!!!
 Don't hesitate to open issues and PRs (please)!
+We only support `armv7l` and `x86_64` at the moment for pre-compiled binaries. Any additional binaries would be greatly appreciated!
