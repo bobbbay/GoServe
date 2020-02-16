@@ -27,9 +27,9 @@ bash install.sh
 And you're done!
 
 Breakdown:
-Line 1: Remove any extra install files
-Line 2: Grab the GoServe install file
-Line 3: Run the GoServe install file
+- Line 1: Remove any extra install files
+- Line 2: Grab the GoServe install file
+- Line 3: Run the GoServe install file
 
 #### I *have* Golang installed
 Run 
