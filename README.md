@@ -1,6 +1,6 @@
 <h1 align="center"> GoServe </h1>
 
-<p align="center"><a href="#install">Install</a> | [Use]() | [Contribute]()</p>
+<p align="center"><a href="#install">Install</a> | <a href="#start">Use</a> | <a href="#contribute">Contribute</a></p>
 
 Quickly serve static sites in Go. You don't *need* to have Golang installed, nor do you need to know any Go! Just use the speed of Go to your advantage.
 
@@ -57,6 +57,6 @@ Just run
 make update
 ```
 
-## HELP!!!
-Don't hesitate to open issues and PRs (please)!
+## Contribute
+HELP! Don't hesitate to open issues and PRs (please)!
 We only support `armv7l` and `x86_64` at the moment for pre-compiled binaries. Any additional binaries would be greatly appreciated!
