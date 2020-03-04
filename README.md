@@ -1,4 +1,7 @@
-# GoServe
+<h1 align="center"> GoServe </h1>
+
+<p align="center"><a href="#install">Install</a> | [Use]() | [Contribute]()</p>
+
 Quickly serve static sites in Go. You don't *need* to have Golang installed, nor do you need to know any Go! Just use the speed of Go to your advantage.
 
 [![Bobbbay](https://circleci.com/gh/Bobbbay/GoServe.svg?style=svg)](https://app.circleci.com/github/Bobbbay/GoServe/pipelines)
