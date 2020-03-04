@@ -56,11 +56,11 @@ func setup() {
     }
 	
 	write, err := settings.WriteString(text + ";")
-	fmt.Println(write)
 
 	if err != nil {
         fmt.Println(err)
-        settings.Close()
+		settings.Close()
+		fmt.Println(write)
         return
 	}
 		
