@@ -37,6 +37,7 @@ If you don't have Golang installed, you will also need `curl` and `wget`.
 
 ### Just get it
 #### I *don't* have Golang installed
+NOTE: Your version of GoServe will be off. 
 Run 
 ```
 wget -q raw.githubusercontent.com/Bobbbay/GoServe/master/install.sh -O - | bash
