@@ -37,7 +37,7 @@ If you don't have Golang installed, you will also need `curl` and `wget`.
 
 ### Just get it
 #### I *don't* have Golang installed
-NOTE: Your version of GoServe will be off. 
+NOTE: Your version of GoServe may be old. The most updated precompiled binary is the `x86_64` binary.
 Run 
 ```
 wget -q raw.githubusercontent.com/Bobbbay/GoServe/master/install.sh -O - | bash
