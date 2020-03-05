@@ -1,13 +1,15 @@
 <h1 align="center"> GoServe </h1>
 
+<p align="center"><img src="https://github.com/Bobbbay/GoServe/raw/master/assets/GoServe-mini.png" height="200" align="center"/></p>
+
 <p align="center">
-  <a href="#install">Demo</a>
+  <a href="#demo">Demo</a>
   &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#start">Install</a>
+  <a href="#install">Install</a>
   &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#start">Use</a>
   &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#start">Todo</a>
+  <a href="#todo">Todo</a>
   &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#contribute">Contribute</a>
 </p>
@@ -19,6 +21,9 @@
 </p>
 
 Quickly serve static sites in Go. You don't *need* to have Golang installed, nor do you need to know any Go! Just use the speed of Go to your advantage.
+
+## Demo
+[![asciicast](https://asciinema.org/a/307129.svg)](https://asciinema.org/a/307129)
 
 ## What is this?
 GoServe is a quick, 1-dep (Golang) serving utility, making anyone serve locally easily and quickly, especially since you have the speed of Go on your side!
@@ -67,6 +72,13 @@ Just run
 ```
 make update
 ```
+
+## TODO
+A lot.
+- Asciinema at the top => .gif in this README
+- WAYYYYY more commenting main.go
+- Translate README?
+- More Asciinema vids
 
 ## Contribute
 HELP! Don't hesitate to open issues and PRs (please)!
