@@ -1,6 +1,12 @@
 <h1 align="center"> GoServe </h1>
 
-<p align="center"><a href="#install">Install</a> | <a href="#start">Use</a> | <a href="#contribute">Contribute</a></p>
+<p align="center">
+  <a href="#install">Install</a>
+  &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#start">Use</a>
+  &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#contribute">Contribute</a>
+</p>
 
 <p align="center">
   <a target="_blank" href="https://app.circleci.com/github/Bobbbay/GoServe/pipelines" title="Circle CI Check"><img src="https://circleci.com/gh/Bobbbay/GoServe.svg?style=svg"/></a>
