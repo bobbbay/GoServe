@@ -31,7 +31,7 @@ Absolutely NO knowledge of Go is needed to use. Just run `make` and it will do t
 
 ## Install
 ### Dependencies
-Actually, I lied. You need git to install. Sorry :smirk::grin:
+Actually, I lied. You need git to install. Sorry :smirk::grin:.
 
 If you don't have Golang installed, you will also need `curl` and `wget`. 
 
