@@ -3,15 +3,9 @@
 <p align="center"><a href="#install">Install</a> | <a href="#start">Use</a> | <a href="#contribute">Contribute</a></p>
 
 <p align="center">
-  <a href="https://app.circleci.com/github/Bobbbay/GoServe/pipelines">
-    <img src="https://circleci.com/gh/Bobbbay/GoServe.svg?style=svg"/>
-  </a>
-  <a href="https://travis-ci.org/Bobbbay/GoServe">
-    <img src="https://travis-ci.org/Bobbbay/GoServe.svg?branch=master"/>
-  </a>
-  <a href="https://app.bitrise.io/app/b0999db5cd64218a">
-    <img src="https://app.bitrise.io/app/b0999db5cd64218a/status.svg?token=3krVYrcb8WhnTUEsSOAB8Q"/>
-  </a>
+  <a target="_blank" href="https://app.circleci.com/github/Bobbbay/GoServe/pipelines" title="Circle CI Check"><img src="https://circleci.com/gh/Bobbbay/GoServe.svg?style=svg"/></a>
+  <a target="_blank" href="https://travis-ci.org/Bobbbay/GoServe" title="Travis CI Check"><img src="https://travis-ci.org/Bobbbay/GoServe.svg?branch=master"/></a>
+  <a target="_blank" href="https://app.bitrise.io/app/b0999db5cd64218a" title="Bitrise Check"><img src="https://app.bitrise.io/app/b0999db5cd64218a/status.svg?token=3krVYrcb8WhnTUEsSOAB8Q"/></a>
 </p>
 
 Quickly serve static sites in Go. You don't *need* to have Golang installed, nor do you need to know any Go! Just use the speed of Go to your advantage.
