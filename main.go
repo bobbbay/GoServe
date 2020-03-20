@@ -51,8 +51,8 @@ func setup() {
 	settings, err := os.OpenFile("config/goserve.conf", os.O_APPEND|os.O_WRONLY, 0644)
 	
 	if err != nil {
-        fmt.Println(err)
-        return
+            fmt.Println(err)
+            return
     }
 	
 	write, err := settings.WriteString(text + ";")
