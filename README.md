@@ -58,7 +58,7 @@ cd GoServe
 ```
 Then
 ```
-make
+sudo make
 ```
 
 ## Update

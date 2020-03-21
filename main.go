@@ -41,11 +41,7 @@ func setup() {
     // convert CRLF to LF
 	text = strings.Replace(text, "\n", "", -1)
 
-	num, err := strconv.Atoi(text)
-	if err == nil && num <= 1024 && i == 0 {
-		fmt.Println("We don't support low ports yet")
-		os.Exit(1)
-	}
+	_, err := strconv.Atoi(text)
 
 	// At this point, we consider all is good
 	settings, err := os.OpenFile("config/goserve.conf", os.O_APPEND|os.O_WRONLY, 0644)
