@@ -58,8 +58,12 @@ cd GoServe
 ```
 Then
 ```
-sudo make
+sudo go run main.go
 ```
+
+# Common problems
+## I don't have `sudo` permissions
+If you don't have sudo permissions, then you can't serve ports under 1024. This means you cannot serve the default port, 80. You **can** still serve any valid port above 1024. Some comonly known are ```8080``` and ```1234```.
 
 ## Update
 Just run 
