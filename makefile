@@ -1,4 +1,5 @@
 run:
-	go run main.go
+	@go run main.go
 update:
-	git pull origin master
+	echo "\033[1;36m%s\033[0mUpdating GoServe..."
+	@git pull origin master
