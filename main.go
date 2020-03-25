@@ -49,7 +49,8 @@ func banner() {
 func clean() {
   os.Remove("config/goserve.conf")
   os.Create("config/goserve.conf")
-  fmt.Println(Info("GoServe cleaned, run make to start again"))
+  fmt.Println(Info(Info("GoServe config cleaned.")))
+  main()
 }
 
 func setupCloseHandler() {
@@ -72,7 +73,7 @@ func setup() {
     for i := 0;i < len(steps);i++{
     fmt.Print(steps[i] + " $ ")
     if i != 0 {
-      fmt.Print("/")
+      fmt.Print(Green("/"))
     }
     text, _ := reader.ReadString('\n')
       // convert CRLF to LF
@@ -106,7 +107,7 @@ func setup() {
 
   }
 
-  fmt.Println("All done setting up!")
+  fmt.Println(Purple("All done setting up!"))
   serve()
 
 }
@@ -131,7 +132,7 @@ func serve() {
   srcDir := "/" + parsed[1]
 
   http.Handle("/", http.FileServer(http.Dir(srcDir)))
-  fmt.Println("Server is up and running, serving " + srcDir + ".")
+  fmt.Println(Purple("Server is up and running, serving " + srcDir + "."))
   if err := http.ListenAndServe(":" + port, nil);
   err != nil {
     panic(err)
@@ -154,7 +155,7 @@ func main() {
     text, _ := reader.ReadString('\n')
     text = strings.Replace(text, "\n", "", -1)
     if text == "y" {
-      fmt.Print("Are you sure? ")
+      fmt.Print(Fata("Are you sure? "))
       reader2 := bufio.NewReader(os.Stdin)
       text2, _ := reader2.ReadString('\n')
       text2 = strings.Replace(text2, "\n", "", -1)
